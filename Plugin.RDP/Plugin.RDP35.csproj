@@ -36,10 +36,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AxMSTSCLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a8ac5fc45c3adb8d, processorArchitecture=MSIL">
-      <HintPath>..\packages\Windows.AxMSTSCLib.1.0.1\lib\net20\AxMSTSCLib.DLL</HintPath>
+      <HintPath>..\packages\Windows.AxMSTSCLib.1.0.2\lib\net20\AxMSTSCLib.DLL</HintPath>
     </Reference>
     <Reference Include="MSTSCLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a8ac5fc45c3adb8d, processorArchitecture=MSIL">
-      <HintPath>..\packages\Windows.AxMSTSCLib.1.0.1\lib\net20\MSTSCLib.DLL</HintPath>
+      <HintPath>..\packages\Windows.AxMSTSCLib.1.0.2\lib\net20\MSTSCLib.DLL</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="SAL.Flatbed, Version=1.2.9.2, Culture=neutral, PublicKeyToken=a8ac5fc45c3adb8d, processorArchitecture=MSIL">
