@@ -17,7 +17,7 @@
 			<group targetFramework="net20">
 				<dependency id="SAL.Flatbed" version="1.2.9" />
 				<dependency id="SAL.Windows" version="1.2.9" />
-				<dependency id="AxMSTSCLib" version="1.0.1" />
+				<dependency id="Windows.AxMSTSCLib" version="1.0.2" />
 			</group>
 		</dependencies>
 	</metadata>
