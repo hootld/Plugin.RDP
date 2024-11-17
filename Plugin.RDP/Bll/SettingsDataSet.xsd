@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SettingsDataSet" targetNamespace="http://alphaomega.somee.com/SettingsDataSet.xsd" xmlns:mstns="http://alphaomega.somee.com/SettingsDataSet.xsd" xmlns="http://alphaomega.somee.com/SettingsDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="NotPublic" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SettingsDataSet" msdata:IsDataSet="true" msdata:Locale="" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SettingsDataSet" msprop:Generator_UserDSName="SettingsDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Tree" msprop:Generator_UserTableName="Tree" msprop:Generator_RowEvArgName="TreeRowChangeEvent" msprop:Generator_TableVarName="tableTree" msprop:Generator_TablePropName="Tree" msprop:Generator_RowDeletingName="TreeRowDeleting" msprop:Generator_RowChangingName="TreeRowChanging" msprop:Generator_RowDeletedName="TreeRowDeleted" msprop:Generator_RowEvHandlerName="TreeRowChangeEventHandler" msprop:Generator_TableClassName="TreeDataTable" msprop:Generator_RowChangedName="TreeRowChanged" msprop:Generator_RowClassName="TreeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TreeID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnTreeID" msprop:Generator_ColumnPropNameInRow="TreeID" msprop:Generator_ColumnPropNameInTable="TreeIDColumn" msprop:Generator_UserColumnName="TreeID" type="xs:int" />
+              <xs:element name="ParentTreeID" msprop:Generator_ColumnVarNameInTable="columnParentTreeID" msprop:Generator_ColumnPropNameInRow="ParentTreeID" msprop:Generator_ColumnPropNameInTable="ParentTreeIDColumn" msprop:Generator_UserColumnName="ParentTreeID" type="xs:int" minOccurs="0" />
+              <xs:element name="ElementTypeID" msprop:Generator_ColumnVarNameInTable="columnElementTypeID" msprop:Generator_ColumnPropNameInRow="ElementTypeID" msprop:Generator_ColumnPropNameInTable="ElementTypeIDColumn" msprop:Generator_UserColumnName="ElementTypeID" type="xs:unsignedByte" />
+              <xs:element name="OrderId" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="OrderId" msprop:Generator_ColumnVarNameInTable="columnOrderId" msprop:Generator_ColumnPropNameInTable="OrderIdColumn" msprop:Generator_UserColumnName="OrderId" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RdpClient" msprop:Generator_UserTableName="RdpClient" msprop:Generator_RowEvArgName="RdpClientRowChangeEvent" msprop:Generator_TableVarName="tableRdpClient" msprop:Generator_TablePropName="RdpClient" msprop:Generator_RowDeletingName="RdpClientRowDeleting" msprop:Generator_RowChangingName="RdpClientRowChanging" msprop:Generator_RowDeletedName="RdpClientRowDeleted" msprop:Generator_RowEvHandlerName="RdpClientRowChangeEventHandler" msprop:Generator_TableClassName="RdpClientDataTable" msprop:Generator_RowChangedName="RdpClientRowChanged" msprop:Generator_RowClassName="RdpClientRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TreeID" msprop:Generator_ColumnVarNameInTable="columnTreeID" msprop:Generator_ColumnPropNameInRow="TreeID" msprop:Generator_ColumnPropNameInTable="TreeIDColumn" msprop:Generator_UserColumnName="TreeID" type="xs:int" />
+              <xs:element name="Server" msprop:Generator_ColumnVarNameInTable="columnServer" msprop:Generator_ColumnPropNameInRow="Server" msprop:Generator_ColumnPropNameInTable="ServerColumn" msprop:Generator_UserColumnName="Server" type="xs:string" />
+              <xs:element name="UserName" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn" msprop:Generator_UserColumnName="UserName" type="xs:string" />
+              <xs:element name="Password" msprop:Generator_ColumnVarNameInTable="columnPassword" msprop:Generator_ColumnPropNameInRow="Password" msprop:Generator_ColumnPropNameInTable="PasswordColumn" msprop:Generator_UserColumnName="Password" type="xs:string" minOccurs="0" />
+              <xs:element name="Domain" msprop:Generator_ColumnVarNameInTable="columnDomain" msprop:Generator_ColumnPropNameInRow="Domain" msprop:Generator_ColumnPropNameInTable="DomainColumn" msprop:Generator_UserColumnName="Domain" type="xs:string" minOccurs="0" />
+              <xs:element name="AuthenticationLevel" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="AuthenticationLevel" msprop:Generator_ColumnVarNameInTable="columnAuthenticationLevel" msprop:Generator_ColumnPropNameInTable="AuthenticationLevelColumn" msprop:Generator_UserColumnName="AuthenticationLevel" type="xs:unsignedInt" default="0" minOccurs="0" />
+              <xs:element name="IconId" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="IconId" msprop:Generator_ColumnVarNameInTable="columnIconId" msprop:Generator_ColumnPropNameInTable="IconIdColumn" msprop:Generator_UserColumnName="IconId" type="xs:short" default="0" minOccurs="0" />
+              <xs:element name="ConnectConsole" msprop:nullValue="false" msprop:Generator_ColumnPropNameInRow="ConnectConsole" msprop:Generator_ColumnVarNameInTable="columnConnectConsole" msprop:Generator_ColumnPropNameInTable="ConnectConsoleColumn" msprop:Generator_UserColumnName="ConnectConsole" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="ConnectPort" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="ConnectPort" msprop:Generator_ColumnVarNameInTable="columnConnectPort" msprop:Generator_ColumnPropNameInTable="ConnectPortColumn" msprop:Generator_UserColumnName="ConnectPort" type="xs:int" minOccurs="0" />
+              <xs:element name="ConnectionType" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="ConnectionType" msprop:Generator_ColumnVarNameInTable="columnConnectionType" msprop:Generator_ColumnPropNameInTable="ConnectionTypeColumn" msprop:Generator_UserColumnName="ConnectionType" type="xs:byte" minOccurs="0" />
+              <xs:element name="VirtualMachineId" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="VirtualMachineId" msprop:Generator_ColumnVarNameInTable="columnVirtualMachineId" msprop:Generator_ColumnPropNameInTable="VirtualMachineIdColumn" msprop:Generator_UserColumnName="VirtualMachineId" type="xs:string" minOccurs="0" />
+              <xs:element name="MinutesToIdle" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="MinutesToIdle" msprop:Generator_ColumnVarNameInTable="columnMinutesToIdle" msprop:Generator_ColumnPropNameInTable="MinutesToIdleColumn" msprop:Generator_UserColumnName="MinutesToIdle" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="Redirect" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="Redirect" msprop:Generator_ColumnVarNameInTable="columnRedirect" msprop:Generator_ColumnPropNameInTable="RedirectColumn" msprop:Generator_UserColumnName="Redirect" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="RedirectAudio" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="RedirectAudio" msprop:Generator_ColumnVarNameInTable="columnRedirectAudio" msprop:Generator_ColumnPropNameInTable="RedirectAudioColumn" msprop:Generator_UserColumnName="RedirectAudio" type="xs:unsignedInt" default="0" minOccurs="0" />
+              <xs:element name="RedirectAudioQuality" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="RedirectAudioQuality" msprop:Generator_ColumnVarNameInTable="columnRedirectAudioQuality" msprop:Generator_ColumnPropNameInTable="RedirectAudioQualityColumn" msprop:Generator_UserColumnName="RedirectAudioQuality" type="xs:unsignedInt" default="0" minOccurs="0" />
+              <xs:element name="RedirectAudioCapture" msprop:nullValue="false" msprop:Generator_ColumnPropNameInRow="RedirectAudioCapture" msprop:Generator_ColumnVarNameInTable="columnRedirectAudioCapture" msprop:Generator_ColumnPropNameInTable="RedirectAudioCaptureColumn" msprop:Generator_UserColumnName="RedirectAudioCapture" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="KeyboardHook" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="KeyboardHook" msprop:Generator_ColumnVarNameInTable="columnKeyboardHook" msprop:Generator_ColumnPropNameInTable="KeyboardHookColumn" msprop:Generator_UserColumnName="KeyboardHook" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="ColorDepth" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="ColorDepth" msprop:Generator_ColumnVarNameInTable="columnColorDepth" msprop:Generator_ColumnPropNameInTable="ColorDepthColumn" msprop:Generator_UserColumnName="ColorDepth" type="xs:int" minOccurs="0" />
+              <xs:element name="DesktopSize" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="DesktopSize" msprop:Generator_ColumnVarNameInTable="columnDesktopSize" msprop:Generator_ColumnPropNameInTable="DesktopSizeColumn" msprop:Generator_UserColumnName="DesktopSize" type="xs:string" minOccurs="0" />
+              <xs:element name="PerformanceFlags" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="PerformanceFlags" msprop:Generator_ColumnVarNameInTable="columnPerformanceFlags" msprop:Generator_ColumnPropNameInTable="PerformanceFlagsColumn" msprop:Generator_UserColumnName="PerformanceFlags" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="RunApplication" msprop:nullValue="false" msprop:Generator_ColumnPropNameInRow="RunApplication" msprop:Generator_ColumnVarNameInTable="columnRunApplication" msprop:Generator_ColumnPropNameInTable="RunApplicationColumn" msprop:Generator_UserColumnName="RunApplication" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="RunApplicationPath" msprop:nullValue="" msprop:Generator_ColumnPropNameInRow="RunApplicationPath" msprop:Generator_ColumnVarNameInTable="columnRunApplicationPath" msprop:Generator_ColumnPropNameInTable="RunApplicationPathColumn" msprop:Generator_UserColumnName="RunApplicationPath" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="RunApplicationWorkingDir" msprop:nullValue="" msprop:Generator_ColumnPropNameInRow="RunApplicationWorkingDir" msprop:Generator_ColumnVarNameInTable="columnRunApplicationWorkingDir" msprop:Generator_ColumnPropNameInTable="RunApplicationWorkingDirColumn" msprop:Generator_UserColumnName="RunApplicationWorkingDir" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="RunApplicationMaximize" msprop:nullValue="false" msprop:Generator_ColumnPropNameInRow="RunApplicationMaximize" msprop:Generator_ColumnVarNameInTable="columnRunApplicationMaximize" msprop:Generator_ColumnPropNameInTable="RunApplicationMaximizeColumn" msprop:Generator_UserColumnName="RunApplicationMaximize" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="GatewayEnabled" msprop:nullValue="false" msprop:Generator_ColumnPropNameInRow="GatewayEnabled" msprop:Generator_ColumnVarNameInTable="columnGatewayEnabled" msprop:Generator_ColumnPropNameInTable="GatewayEnabledColumn" msprop:Generator_UserColumnName="GatewayEnabled" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="GatewayServer" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="GatewayServer" msprop:Generator_ColumnVarNameInTable="columnGatewayServer" msprop:Generator_ColumnPropNameInTable="GatewayServerColumn" msprop:Generator_UserColumnName="GatewayServer" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="GatewayBypass" msprop:nullValue="false" msprop:Generator_ColumnPropNameInRow="GatewayBypass" msprop:Generator_ColumnVarNameInTable="columnGatewayBypass" msprop:Generator_ColumnPropNameInTable="GatewayBypassColumn" msprop:Generator_UserColumnName="GatewayBypass" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="GatewayShareAuth" msprop:nullValue="false" msprop:Generator_ColumnPropNameInRow="GatewayShareAuth" msprop:Generator_ColumnVarNameInTable="columnGatewayShareAuth" msprop:Generator_ColumnPropNameInTable="GatewayShareAuthColumn" msprop:Generator_UserColumnName="GatewayShareAuth" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="GatewayUserName" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="GatewayUserName" msprop:Generator_ColumnVarNameInTable="columnGatewayUserName" msprop:Generator_ColumnPropNameInTable="GatewayUserNameColumn" msprop:Generator_UserColumnName="GatewayUserName" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="GatewayPassword" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="GatewayPassword" msprop:Generator_ColumnVarNameInTable="columnGatewayPassword" msprop:Generator_ColumnPropNameInTable="GatewayPasswordColumn" msprop:Generator_UserColumnName="GatewayPassword" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="GatewayDomain" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="GatewayDomain" msprop:Generator_ColumnVarNameInTable="columnGatewayDomain" msprop:Generator_ColumnPropNameInTable="GatewayDomainColumn" msprop:Generator_UserColumnName="GatewayDomain" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="GatewayLogonMethod" msprop:nullValue="4" msprop:Generator_ColumnPropNameInRow="GatewayLogonMethod" msprop:Generator_ColumnVarNameInTable="columnGatewayLogonMethod" msprop:Generator_ColumnPropNameInTable="GatewayLogonMethodColumn" msprop:Generator_UserColumnName="GatewayLogonMethod" type="xs:unsignedInt" default="4" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:Tree" />
+      <xs:field xpath="mstns:TreeID" />
+    </xs:unique>
+    <xs:keyref name="FK_Tree_RdpClient" refer="Constraint1" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:RdpClient" />
+      <xs:field xpath="mstns:TreeID" />
+    </xs:keyref>
+    <xs:keyref name="FK_Tree_Tree" refer="Constraint1" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:Tree" />
+      <xs:field xpath="mstns:ParentTreeID" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

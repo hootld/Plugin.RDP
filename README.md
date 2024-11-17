@@ -1,0 +1,2 @@
+# Plugin.RDP
+Microsoft engineers created awesome application to connect to multiple servers using RDP protocol — RDCMan. And I'm using this application for a quite some time until I accidentally saw a CLR exception. In that time I decided to update this program and add some custom features.
