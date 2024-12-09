@@ -11,13 +11,11 @@ namespace Plugin.RDP
 	/// <summary>http://www.codeproject.com/KB/cs/RemoteDesktop_CSharpNET.aspx</summary>
 	public class PluginWindows : IPlugin, IPluginSettings<PluginSettings>
 	{
-		#region Fields
 		private TraceSource _trace;
 		private PluginSettings _settings;
 		private Dictionary<String, DockState> _documentTypes;
 		private RdpClientDlg _properties;
-		#endregion Fields
-		#region Properties
+
 		internal TraceSource Trace => this._trace ?? (this._trace = PluginWindows.CreateTraceSource<PluginWindows>());
 
 		internal IHostWindows HostWindows { get; }
@@ -55,7 +53,6 @@ namespace Plugin.RDP
 			}
 		}
 
-		#endregion Properties
 		public PluginWindows(IHostWindows hostWindows)
 			=> this.HostWindows = hostWindows ?? throw new ArgumentNullException(nameof(hostWindows));
 

@@ -18,7 +18,7 @@ using System.Runtime.InteropServices;
 #endif
 [assembly: AssemblyCompany("Danila Korablin")]
 [assembly: AssemblyProduct("Plugin.RDP")]
-[assembly: AssemblyCopyright("Copyright © RDCMan authors & Danila Korablin 2011-2023")]
+[assembly: AssemblyCopyright("Copyright © RDCMan authors & Danila Korablin 2011-2024")]
 #endif
 
 /*

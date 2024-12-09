@@ -12,17 +12,16 @@
 		<description>Microsoft engineers created awesome application to connect to multiple servers using RDP protocol — RDCMan. And I'm using this application for a quite some time until I accidentally saw a CLR exception. In that time I decided to update this program and add some custom features.</description>
 		<releaseNotes></releaseNotes>
 		<copyright>Danila Korablin</copyright>
-		<tags>SAL,Plugin</tags>
+		<tags>SAL,Plugin,RDP</tags>
 		<dependencies>
 			<group targetFramework="net20">
-				<dependency id="SAL.Flatbed" version="1.2.9" />
-				<dependency id="SAL.Windows" version="1.2.9" />
+				<dependency id="SAL.Windows" version="1.2.10" />
 				<dependency id="Windows.AxMSTSCLib" version="1.0.2" />
 			</group>
 		</dependencies>
 	</metadata>
 	<files>
-		<file src="readme.md" target="docs" />
+		<file src="README.md" target="docs" />
 		<!--file src="bin\net20\Plugin.RDP.xml" target="xml" /-->
 		<file src="bin\net20\Plugin.RDP.dll" target="lib\net20" />
 	</files>
